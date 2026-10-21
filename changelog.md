@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file.
 - _Lorem ipsum..._
 -->
 
+## [1.0.2] - 2026/10/21
+### Changed
+- README file.
+- `changelog.md`.
+- `f.py`, `run_script_jupyter.ipynb`, `run_script_python.py`: Change class name from 'Data_processing' to 'Time_series_data_processing'.
+
 ## [1.0.1] - 2026/09/30
 ### Added
 - `changelog.md` file.
