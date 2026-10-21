@@ -1,7 +1,7 @@
 # data_processing
-Script for data processing of measurement replicates (calculating average and standard deviation), do statistics (p-value between measurements and coefficient of variation between replicates), and plotting the results.
+Script for time series data processing of measurement replicates (calculating average and standard deviation), do statistics (p-value between measurements and coefficient of variation between replicates), and plotting the results.
 
-*· Contributors: Eloi Martinez-Rabert*.<br>
+*· Contributors: Eloi Martinez-Rabert, James Bradley*.<br>
 > [!NOTE]
 > To open the links in a new tab: right click on the link + "Open link in new tab".
 ____________________________
