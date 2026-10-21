@@ -1,4 +1,4 @@
-# data_processing
+# time_series_data_processing
 Script for time series data processing of measurement replicates (calculating average and standard deviation), do statistics (p-value between measurements and coefficient of variation between replicates), and plotting the results.
 
 *· Contributors: Eloi Martinez-Rabert, James Bradley*.<br>
