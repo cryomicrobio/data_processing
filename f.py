@@ -15,7 +15,7 @@ import matplotlib.ticker as ticker
 import matplotlib.image as mpimg
 import datetime
 
-class Data_processing:
+class Time_series_data_processing:
     path_data = 'data/'
     path_save = 'results/'
     plt.rcParams['figure.dpi'] = 400
@@ -101,7 +101,7 @@ class Data_processing:
         Statistics outcome saved in Folder `results/`
 
         """
-        data = pd.read_csv(f'{Data_processing.path_data}{data_name}.csv')
+        data = pd.read_csv(f'{Time_series_data_processing.path_data}{data_name}.csv')
         data_IDs = data['sample_id'].unique()
         if significant_difference_times and significant_difference_t0:
             raise ValueError('Choose one of significant difference method: significant difference between t_n and t_n+1 (`significant_difference_times = True`) or between t_0 and t_n (`significant_difference_t0 = True`).')
@@ -110,7 +110,7 @@ class Data_processing:
             time_now = datetime.datetime.now()
             time_now_strf = time_now.strftime('%Y-%m-%d_%H%M%S')
             file = f'{var1}_pval_{time_now_strf}.xlsx'
-            full_path_save = Data_processing.path_save + file
+            full_path_save = Time_series_data_processing.path_save + file
             if not os.path.isfile(full_path_save):
                 introRowDGr = pd.DataFrame(np.array(['Oxygen measurements. Light vs Dark (p-values)']))
                 with pd.ExcelWriter(full_path_save) as writer:
@@ -129,7 +129,7 @@ class Data_processing:
             time_now = datetime.datetime.now()
             time_now_strf = time_now.strftime('%Y-%m-%d_%H%M%S')
             file_CV = f'CV_replicates_{time_now_strf}_{CV_method}.xlsx'
-            full_path_save_CV = Data_processing.path_save + file_CV
+            full_path_save_CV = Time_series_data_processing.path_save + file_CV
             if not os.path.isfile(full_path_save_CV):
                 introRowDGr = pd.DataFrame(np.array([f'Coefficeint of variation of replicates ({CV_method_name})']))
                 with pd.ExcelWriter(full_path_save_CV) as writer:
@@ -222,7 +222,7 @@ class Data_processing:
                 x = descr.index.values
                 count = int(descr[measurement_by_type[iType][0]]['count'].unique()[0])
                 title = f'{sample_id} ({iType}) | n = {count}'
-                full_path_figsave = Data_processing.path_save + f'{sample_id}_{condition}_{iType}.tiff'
+                full_path_figsave = Time_series_data_processing.path_save + f'{sample_id}_{condition}_{iType}.tiff'
                 if condition == 'Light':
                     icon = mpimg.imread('data/light_icon.png')
                     zoom = 0.060
