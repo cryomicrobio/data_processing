@@ -5,7 +5,7 @@ Created on Wed Jun 24 10:05:34 2026
 @author: emartinez
 """
 
-from f import Data_processing
+from f import Time_series_data_processing
 
 #-Data info
 data_name = 'MZS_O2'
@@ -59,29 +59,29 @@ significant_difference_t0 = True
 CV_method = 'RSD' # 'RSD' or 'QCD' | RSD - Relative Standard deviaiton; QCD - Quartile coefficient of dispersion
 
 #-Execute function
-Data_processing.process_and_stats(data_name = data_name, 
-                                  conditions = conditions, 
-                                  measurement_by_type = measurement_by_type, 
-                                  var1_colors = var1_colors, 
-                                  legend_labels = legend_labels, 
-                                  y_plus_texts = y_plus_texts, 
-                                  var1 = var1, 
-                                  var1_label = var1_label, 
-                                  var2 = var2,
-                                  var2_label = var2_label,
-                                  var2_color = var2_color,
-                                  max_time = max_time, 
-                                  show_legend = show_legend, 
-                                  legend_orientation = legend_orientation, 
-                                  save_fig = save_fig, 
-                                  xlim = xlim, 
-                                  ylim_var1 = ylim_var1, 
-                                  ylim_var2 = ylim_var2, 
-                                  ns_label = ns_label,
-                                  ns_label_fontsize = ns_label_fontsize, 
-                                  x_ticker_format = x_ticker_format, 
-                                  stats_dark_vs_light = stats_dark_vs_light, 
-                                  stats_coefficient_of_variation = stats_coefficient_of_variation, 
-                                  CV_method = CV_method, 
-                                  significant_difference_times = significant_difference_times,
-                                  significant_difference_t0 = significant_difference_t0)
+Time_series_data_processing.process_and_stats(data_name = data_name, 
+                                              conditions = conditions, 
+                                              measurement_by_type = measurement_by_type, 
+                                              var1_colors = var1_colors, 
+                                              legend_labels = legend_labels, 
+                                              y_plus_texts = y_plus_texts, 
+                                              var1 = var1, 
+                                              var1_label = var1_label, 
+                                              var2 = var2,
+                                              var2_label = var2_label,
+                                              var2_color = var2_color,
+                                              max_time = max_time, 
+                                              show_legend = show_legend, 
+                                              legend_orientation = legend_orientation, 
+                                              save_fig = save_fig, 
+                                              xlim = xlim, 
+                                              ylim_var1 = ylim_var1, 
+                                              ylim_var2 = ylim_var2, 
+                                              ns_label = ns_label,
+                                              ns_label_fontsize = ns_label_fontsize, 
+                                              x_ticker_format = x_ticker_format, 
+                                              stats_dark_vs_light = stats_dark_vs_light, 
+                                              stats_coefficient_of_variation = stats_coefficient_of_variation, 
+                                              CV_method = CV_method, 
+                                              significant_difference_times = significant_difference_times,
+                                              significant_difference_t0 = significant_difference_t0)
