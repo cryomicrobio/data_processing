@@ -25,15 +25,15 @@ ____________________________
         - Installing JupyterLab with pip | [GO](#installing-jupyterlab-with-pip)
 
 · **Dowloading and data formating:**
-- Instructions for downloading and setting up data_processing script | [GO](#clipboard-instructions-for-downloading-and-setting-up-data_processing-script)
+- Instructions for downloading and setting up time_series_data_processing script | [GO](#clipboard-instructions-for-downloading-and-setting-up-time_series_data_processing-script)
     - Data formating instructions | [GO](#data-formating-instructions)
 
 · **Instruction for use:**
-- With Spyder | [GO](#clipboard-instruction-for-use-data_processing-via-spyder)
-- With Jupyter Notebook | [GO](#clipboard-instruction-for-use-data_processing-via-jupyter-notebook)
-- With JupyterLab | [GO](#clipboard-instruction-for-use-data_processing-via-jupyterlab)
+- With Spyder | [GO](#clipboard-instruction-for-use-time_series_data_processing-via-spyder)
+- With Jupyter Notebook | [GO](#clipboard-instruction-for-use-time_series_data_processing-via-jupyter-notebook)
+- With JupyterLab | [GO](#clipboard-instruction-for-use-time_series_data_processing-via-jupyterlab)
 - Script guidelines | [GO](#script-guidelines)
-    - Data_processing.process_and_stats | [GO](#data_processingprocess_and_stats)
+    - Time_series_data_processing.process_and_stats | [GO](#time_series_data_processingprocess_and_stats)
 
 · **Contact**:
 - Contact | [GO](#contact)
@@ -117,7 +117,7 @@ This script is built up in Python. You can execute this script in Python with **
 #### Installing Jupyter using Anaconda and Conda
 1. Download [Anaconda](https://www.anaconda.com/download). We recommend downloading Anaconda’s latest Python 3 version (currently Python 3.9).
 2. Install the version of Anaconda which you downloaded, following the instructions on the download page.
-3. Run the notebook using Command Prompt (Windows/Mac) or Anaconda Prompt - [Run script with Jupyter Notebook](#clipboard-instruction-for-use-data_processing-via-jupyter-notebook).
+3. Run the notebook using Command Prompt (Windows/Mac) or Anaconda Prompt - [Run script with Jupyter Notebook](#clipboard-instruction-for-use-time_series_data_processing-via-jupyter-notebook).
 
 #### Installing Jupyter with pip
 As an exisiting Python user, you can install Jupyter using Python's pacakgae manager pip, instead of Anaconda. 
@@ -155,14 +155,14 @@ pip3 install jupyterlab
 
 ____________________________
 
-## :clipboard: Instructions for downloading and setting up data_processing script
-1. Download .zip code. Last version: `v1.0.1`. [Download release](https://github.com/drmartinezrabert/data_processing/archive/refs/tags/v1.0.1.zip).
+## :clipboard: Instructions for downloading and setting up time_series_data_processing script
+1. Download .zip code. Last version: `v1.0.2`. [Download release](https://github.com/cryomicrobio/time_series_data_processing/archive/refs/tags/v1.0.2.zip).
 2. Extract files to a destination (Recommendation - Desktop).
-3. Open extracted files and copy data  to be processed (format `.csv`) into Folder `data_processing-1.0.1/data/`.
-4. Execute script via Spyder (see [Instruction to use data_processing via Spyder](#clipboard-instruction-for-use-data_processing-via-spyder) section), Jupyter Notebook (see [Instruction to use data_processing via Jupyter Notebook](#clipboard-instruction-for-use-data_processing-via-jupyter-notebook) section) or JupyterLab (see [Instruction to use data_processing via JupyterLab](#clipboard-instruction-for-use-data_processing-via-jupyterlab) section).
+3. Open extracted files and copy data  to be processed (format `.csv`) into Folder `time_series_data_processing-1.0.2/data/`.
+4. Execute script via Spyder (see [Instruction to use time_series_data_processing via Spyder](#clipboard-instruction-for-use-time_series_data_processing-via-spyder) section), Jupyter Notebook (see [Instruction to use time_series_data_processing via Jupyter Notebook](#clipboard-instruction-for-use-time_series_data_processing-via-jupyter-notebook) section) or JupyterLab (see [Instruction to use time_series_data_processing via JupyterLab](#clipboard-instruction-for-use-time_series_data_processing-via-jupyterlab) section).
 
 ### Data formating instructions
-The script `data_processing` only reads files in `.csv` format. In it, some column names are required:
+The script `time_series_data_processing` only reads files in `.csv` format. In it, some column names are required:
 - **ID**. Identifier of sample (the user can choose any).
 - **Sample type**. Description of sample type (the user can choose any).
 - **Condition**. Condition of incubation (for now 'Light' or 'Dark').
@@ -174,23 +174,23 @@ The script `data_processing` only reads files in `.csv` format. In it, some colu
 
 ____________________________
 
-## :clipboard: Instruction for use data_processing via Spyder
+## :clipboard: Instruction for use time_series_data_processing via Spyder
 1. Launch **Spyder**. For Spyder Tutorials, click [here](https://www.youtube.com/watch?v=E2Dap5SfXkI&list=PLPonohdiDqg9epClEcXoAPUiK0pN5eRoc&ab_channel=SpyderIDE).
 2. Set (at least) the following panes in Spyder (most are selected by default): `Files`, `Editor`, `IPython Console`, `Plots`, `Help`, `Historial`.
    From Spyder taskbar: <ins>V</ins>iew / Panes ▸.
 3. Go to the **Code folder<sup>2</sup>** using the `Files` pane and open `run_script_python.py` file.
-    &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `data_processing-1.0.1`). </sup>
-4. Modify arguments of script (see [Data_processing.process_and_stats](#data_processingprocess_and_stats)).
+    &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `time_series_data_processing-1.0.2`). </sup>
+4. Modify arguments of script (see [Time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)).
 5. Run `run_script_python.py` script with Ctrl + Intro, F5 or Play symbol of _Run toolbar_.
 
 [🔼 Back to **Contents**](#readme-contents)
 
 ____________________________
 
-## :clipboard: Instruction for use data_processing via Jupyter Notebook
+## :clipboard: Instruction for use time_series_data_processing via Jupyter Notebook
 1. Open **Anaconda Prompt** or **Command Prompt** of Windows/Mac.
 2. Go to the **Code folder<sup>2</sup>** using `cd` command (more info about [Using Terminal](https://docs.anaconda.com/ae-notebooks/user-guide/basic-tasks/apps/use-terminal/?highlight=Using%20Terminal)).
-    &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `data_processing-1.0.1`).</sup>
+    &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `time_series_data_processing-1.0.2`).</sup>
 3. Open **Jupyter Notebook** with the command line:
    · Command Prompt (Windows):
    ```
@@ -201,17 +201,17 @@ ____________________________
    jupyter notebook
    ```
 4. Install required Python packages running the first cell (if necessary).
-5. Modify arguments of script (see [Data_processing.process_and_stats](#data_processingprocess_and_stats)) and run the cell.
-6. Run cell script with `Data_processing.process_and_stats()`.
+5. Modify arguments of script (see [Time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)) and run the cell.
+6. Run cell script with `Time_series_data_processing.process_and_stats()`.
 
 [🔼 Back to **Contents**](#readme-contents)
 
 ____________________________
 
-## :clipboard: Instruction for use data_processing via JupyterLab
+## :clipboard: Instruction for use time_series_data_processing via JupyterLab
 1. Open **Anaconda Prompt or Terminal**.
 2. Go to the **Code folder<sup>2</sup>** using `cd` command (more info about [Using Terminal](https://docs.anaconda.com/ae-notebooks/user-guide/basic-tasks/apps/use-terminal/?highlight=Using%20Terminal)).
-    &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `data_processing-1.0.1`). </sup>
+    &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `time_series_data_processing-1.0.2`). </sup>
 3. Open **JupyterLab** with the command line:
    · Command Prompt (Windows):
    ```
@@ -222,19 +222,19 @@ ____________________________
    jupyter lab
    ```
 4. Install required Python packages running the first cell (if necessary).
-5. Modify arguments of script (see [Data_processing.process_and_stats](#data_processingprocess_and_stats)) and run the cell..
-6. Run cell script with `Data_processing.process_and_stats()`.
+5. Modify arguments of script (see [Time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)) and run the cell..
+6. Run cell script with `Time_series_data_processing.process_and_stats()`.
 
 [🔼 Back to **Contents**](#readme-contents)
 
 ____________________________
 
 ## Script guidelines
-This section is an overview and explanation of important features of data_processing script. For now, only one function is run `Data_processing.process_and_stats()`.
+This section is an overview and explanation of important features of time_series_data_processing script. For now, only one function is run `Time_series_data_processing.process_and_stats()`.
 
-### Data_processing.process_and_stats
+### Time_series_data_processing.process_and_stats
 ```python
-Data_processing.process_and_stats(data_name, conditions, measurement_by_type, legend_labels, y_plus_texts, var1, var1_label, var1_colors, max_time=9999,  
+Time_series_data_processing.process_and_stats(data_name, conditions, measurement_by_type, legend_labels, y_plus_texts, var1, var1_label, var1_colors, max_time=9999,  
                                   var2=None, var2_label=None, var2_color='#d2554a', show_legend=True, legend_orientation='horizontal', xlim=[None, None],
                                   ylim_var1=[0, 27], ylim_var2=[0, 13], ns_label=True, ns_label_fontsize=9, save_fig=True, x_ticker_format="{x:.1f}",
                                   stats_dark_vs_light=True, stats_coefficient_of_variation=False, CV_method='RSD', significant_difference_times=False,
