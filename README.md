@@ -33,7 +33,7 @@ ____________________________
 - With Jupyter Notebook | [GO](#clipboard-instruction-for-use-time_series_data_processing-via-jupyter-notebook)
 - With JupyterLab | [GO](#clipboard-instruction-for-use-time_series_data_processing-via-jupyterlab)
 - Script guidelines | [GO](#script-guidelines)
-    - time_series_data_processing.process_and_stats | [GO](#time_series_data_processingprocess_and_stats)
+    - Time_series_data_processing.process_and_stats | [GO](#time_series_data_processingprocess_and_stats)
 
 · **Contact**:
 - Contact | [GO](#contact)
@@ -180,7 +180,7 @@ ____________________________
    From Spyder taskbar: <ins>V</ins>iew / Panes ▸.
 3. Go to the **Code folder<sup>2</sup>** using the `Files` pane and open `run_script_python.py` file.
     &#09;<br><sup><sup>2</sup>Code folder: folder with `run_script_jupyter.ipynb` file (Folder: `time_series_data_processing-1.0.2`). </sup>
-4. Modify arguments of script (see [time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)).
+4. Modify arguments of script (see [Time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)).
 5. Run `run_script_python.py` script with Ctrl + Intro, F5 or Play symbol of _Run toolbar_.
 
 [🔼 Back to **Contents**](#readme-contents)
@@ -201,8 +201,8 @@ ____________________________
    jupyter notebook
    ```
 4. Install required Python packages running the first cell (if necessary).
-5. Modify arguments of script (see [time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)) and run the cell.
-6. Run cell script with `time_series_data_processing.process_and_stats()`.
+5. Modify arguments of script (see [Time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)) and run the cell.
+6. Run cell script with `Time_series_data_processing.process_and_stats()`.
 
 [🔼 Back to **Contents**](#readme-contents)
 
@@ -222,19 +222,19 @@ ____________________________
    jupyter lab
    ```
 4. Install required Python packages running the first cell (if necessary).
-5. Modify arguments of script (see [time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)) and run the cell..
-6. Run cell script with `time_series_data_processing.process_and_stats()`.
+5. Modify arguments of script (see [Time_series_data_processing.process_and_stats](#time_series_data_processingprocess_and_stats)) and run the cell..
+6. Run cell script with `Time_series_data_processing.process_and_stats()`.
 
 [🔼 Back to **Contents**](#readme-contents)
 
 ____________________________
 
 ## Script guidelines
-This section is an overview and explanation of important features of time_series_data_processing script. For now, only one function is run `time_series_data_processing.process_and_stats()`.
+This section is an overview and explanation of important features of time_series_data_processing script. For now, only one function is run `Time_series_data_processing.process_and_stats()`.
 
-### time_series_data_processing.process_and_stats
+### Time_series_data_processing.process_and_stats
 ```python
-time_series_data_processing.process_and_stats(data_name, conditions, measurement_by_type, legend_labels, y_plus_texts, var1, var1_label, var1_colors, max_time=9999,  
+Time_series_data_processing.process_and_stats(data_name, conditions, measurement_by_type, legend_labels, y_plus_texts, var1, var1_label, var1_colors, max_time=9999,  
                                   var2=None, var2_label=None, var2_color='#d2554a', show_legend=True, legend_orientation='horizontal', xlim=[None, None],
                                   ylim_var1=[0, 27], ylim_var2=[0, 13], ns_label=True, ns_label_fontsize=9, save_fig=True, x_ticker_format="{x:.1f}",
                                   stats_dark_vs_light=True, stats_coefficient_of_variation=False, CV_method='RSD', significant_difference_times=False,
